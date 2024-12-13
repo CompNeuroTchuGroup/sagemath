@@ -1,0 +1,6 @@
+services:
+  sagemath:
+    image: sagemath/sagemath:latest
+    ports:
+      - "8888:8888"
+    command: sage-jupyter
