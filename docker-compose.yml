@@ -1,6 +1,8 @@
 services:
   sagemath:
     image: sagemath/sagemath:latest
+    environment:
+      - JUPYTER_TOKEN=sagemath
     ports:
       - "8888:8888"
     command: sage-jupyter
